@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Shop Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome To Our Local Shop</h1>
+        <h2>
+        <img src="shop.png" style="height: 50px;width: 50px;" alt="your Local shop">
+        <i>Your Local Shop</i>
+        </h2>
+        
+    </header>
+    <div class="container">
+        <section class="info">
+            <p>Welcome to our simple shop calculator—<br>
+            a quick and easy way to estimate your shopping <br>
+            Designed to help customers know their total instantly and clearly." </p>
+        </section>
+
+        <div class="menu">
+            <h3>Shop Cost Calculator</h3>
+
+            <label>Bread (3,000 UGX)</label>
+            <input type="number" id="bread" value="0">
+
+            <label>Milk (2,500 UGX)</label>
+            <input type="number" id="milk" value="0">
+
+            <label>Eggs (500 UGX each)</label>
+            <input type="number" id="eggs" value="0">
+
+            <button onclick="calculateTotal()">Calculate Total</button>
+
+            <div id="result">Total: UGX 0</div>
+        </div>
+    </div>
+    <footer>
+        <h3>Thank you for choosing Local Shop</h3>
+    </footer>
+
+    <script >
+        function calculateTotal() {
+            let breadQty = Number(document.getElementById("bread").value);
+            let milkQty = Number(document.getElementById("milk").value);
+            let eggsQty = Number(document.getElementById("eggs").value);
+
+            let breadPrice = 3000;
+            let milkPrice = 2500;
+            let eggPrice = 500;
+
+            let total = (breadQty * breadPrice) +
+                        (milkQty * milkPrice) +
+                        (eggsQty * eggPrice);
+
+
+            document.getElementById("result").innerHTML = "Total: UGX " + total;
+}
+    </script>
+
+</body>
+</html>

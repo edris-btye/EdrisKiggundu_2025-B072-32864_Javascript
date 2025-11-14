@@ -1,0 +1,71 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+ }
+ body {
+            font-family: Arial, sans-serif;
+            background: url("image.jpg");
+            background-size: cover;
+        }
+        header{
+            background: white;
+            height: 90px;
+        }
+        h1{
+            text-align: center;
+            color:black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2{
+            padding-bottom: 60px;
+            font-family: magneto;
+
+        }  
+        h3{
+            text-align: center;
+            padding: 20px;
+        }
+        footer{
+            background: rgb(117, 116, 116);
+            height: 10vh;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .info{
+            text-align: center;
+            padding-top:150px ;
+            font-size: 1.2em;
+            color: white;
+            font-weight: 20px;
+        }
+        .menu {
+            width: 350px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: rgb(149, 149, 235);
+            margin-left: 550px;
+
+            justify-content: baseline;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background: blue;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
